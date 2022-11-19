@@ -3,13 +3,7 @@ Getting started with Django, this is a full stack web application.
  
 ### Setup the application
 > Make sure you've Python and PIP installed in your local computer.
- 
-### Clone the repository
- 
-```sh
-$ git clone https://github.com/xarala221/django-phonebook.git
-$ cd django-phonebook
-```
+> 
  
 ### Install dependencies
 ```sh
