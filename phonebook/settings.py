@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'rest_framework', 
     'contact', 
     'pages',  
-    'django_extensions'
 ]
 
 MIDDLEWARE = [
