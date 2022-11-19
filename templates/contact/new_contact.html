@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block header %}
+<style>
+  .flexContainer {
+    display: flex;
+}
+
+.inputField {
+    flex: 1;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="row mt-2">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <form method="POST">
+        {% csrf_token %}
+
+        <div class="form-group">
+          <label for="first_name">First Name :</label>
+          <input type="text" class="form-control" name="first_name" />
+        </div>
+
+        <div class="form-group">
+          <label for="last_name">Last Name :</label>
+          <input type="text" class="form-control" name="last_name" />
+        </div>
+
+        <div class="form-group">
+        <span id="btnremove" >
+          <button class="btn btn-info" type="button" id="addon">Add <i class="fas fa-phone"></i></button>
+          <button class="btn btn-danger" type="button" id="remon">remove <i class="fas fa-phone"></i></button>
+        </span>
+        </div>
+
+
+        <div class="form-group" id="phones">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" class="form-control" name="email" />
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+;
+<script>
+  var child_length = 0;
+  $("#addon").click(function() {
+    // child_length = $("phones").children().length;
+    $("#phones").append("<div class='flexContainer'><input type='text' name='phone" +child_length+ "' /></div>");    
+    child_length = child_length + 1; 
+});
+
+$("#remon").click(function() {
+  $("#phones").children().last().remove();
+});
+
+
+</script>
+{% endblock %}
