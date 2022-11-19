@@ -20,4 +20,4 @@ Open your browser and verify http://localhost:8000/
 ### Application Schema
 
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/63064437/202854681-e6d0033e-eacd-4d53-83fb-9f1be0bbb2c2.png)
