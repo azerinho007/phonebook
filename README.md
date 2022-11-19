@@ -19,10 +19,11 @@ $ pip install -r requirements.txt / pipenv install
 ### Run the application locally
  
 ```sh
-$ python manage.py runserver
+$ python manage.py runserver 0.0.0.0:8000
 ```
 Open your browser and verify http://localhost:8000/
  
-### Deploy to Heroku
-check out the deployment process ([Here](https://dev.to/xarala221/deploy-django-web-application-1c1k))
- 
+### Application Schema
+
+
+![Uploading image.png…]()
